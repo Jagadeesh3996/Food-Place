@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Restaurant</title>
+</head>
+
+<body>
+
+    <!-- header part -->
+
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <div>
+            <input type="checkbox" id="logo">
+            <label for="logo" class="logo">food Place</label>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home" class="fa fa-home"> Home</a></li>
+                <li><a href="#about" class="fa fa-info-circle"> About</a></li>
+                <li><a href="#menu" class="fa fa-spoon"> Menu</a></li>
+                <li><a href="#" class="fa fa-image"> Gallery</a></li>
+                <li><a href="#reserve" class="fa fa-users"> Reservation</a></li>
+                <li><a href="#" class="fa fa-address-card"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- body part -->
+
+    <main>
+        <div id="home">
+            <div class="home">
+                <p>HI, Welcome to</p>
+                <h1>Food Place</h1>
+                <button type="button" class="btn"><a href="#">Today Special</a></button>
+            </div> 
+            <video  autoplay muted loop class="video">
+                <source src="Images/bgv.mp4" type="video/mp4">  
+            </video>   
+        </div>
+        <div id="about">
+            <h1> our story :</h1>
+            <p class="pro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
+            <p class="pro" id="pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
+            <p class="pro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
+            <p class="pro" id="pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
+        </div>
+        <div id="menu">
+            <a href="#" class="smenu tospl"><p>Today Special</p></a>
+            <a href="#" class="smenu veg"><p>Vegetarian</p></a>
+            <a href="#" class="smenu non-veg"><p>Non-Vegetarian</p></a>
+            <a href="#" class="smenu des"><p>Dessert</p></a>
+        </div>
+        <div id="reserve">
+            <h1>Reservation</h1>
+            <div class="reserve">
+                <form action="#" method="post">                    
+                    <label for="name" class="name"> Name : </label>
+                    <input type="text" id="name" placeholder="Name" required><br>
+                    <label for="date" class="date"> Date : </label>
+                    <input type="date" id="date" required><br>
+                    <label for="time"> Timing : </label>
+                    <input type="time" id="time" required><br>
+                    <label for="guest"> Guests : </label>
+                    <input type="number" id="guest" min="1" max="50" placeholder="1" required><br>
+                    <input type="checkbox" id="tc" required>
+                    <label for="tc" class="tc"><a href="#"> Terms & Condition </a></label><br>
+                    <button type="submit" class="button">Reserve Now</button>                       
+                </form>
+            </div>
+            <div class="canply">
+                <p><span> Cancellation policy </span> - While you won't be charged if you need to cancel, we ask that you do so at least 24 hours in advance.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
