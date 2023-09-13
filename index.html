@@ -12,16 +12,16 @@
 
     <!-- header part -->
 
-    <header>
+    <header class="header">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fa fa-bars"></i>
         </label>
-        <div>
+        <div class="logo">
             <input type="checkbox" id="logo">
-            <label for="logo" class="logo">food Place</label>
+            <label for="logo">food Place</label>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav">
             <ul>
                 <li><a href="#home" class="fa fa-home"> Home</a></li>
                 <li><a href="#about" class="fa fa-info-circle"> About</a></li>
@@ -36,33 +36,33 @@
     <!-- body part -->
 
     <main>
-        <div id="home">
-            <div class="home">
+        <div id="home" class="home">
+            <div class="hcontent">
                 <p>HI, Welcome to</p>
                 <h1>Food Place</h1>
-                <button type="button" class="btn"><a href="#">Today Special</a></button>
+                <a href="#menu">Today Special</a>
             </div> 
             <video  autoplay muted loop class="video">
                 <source src="Images/bgv.mp4" type="video/mp4">  
             </video>   
         </div>
-        <div id="about">
+        <div id="about" class="about">
             <h1> our story :</h1>
             <p class="pro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
-            <p class="pro" id="pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
+            <p class="pro pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
             <p class="pro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
-            <p class="pro" id="pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
+            <p class="pro pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic aperiam non atque quae cupiditate. Autem tempora cumque, accusantium deleniti sunt, nulla impedit dolore incidunt natus nostrum reiciendis ullam quidem.</p>
         </div>
-        <div id="menu">
+        <div id="menu" class="menu">
             <a href="#" class="smenu tospl"><p>Today Special</p></a>
             <a href="#" class="smenu veg"><p>Vegetarian</p></a>
             <a href="#" class="smenu non-veg"><p>Non-Vegetarian</p></a>
             <a href="#" class="smenu des"><p>Dessert</p></a>
         </div>
-        <div id="reserve">
+        <div id="reserve" class="reserve">
             <h1>Reservation</h1>
-            <div class="reserve">
-                <form action="#" method="post">                    
+            <div class="resForm">
+                <form method="post">                    
                     <label for="name" class="name"> Name : </label>
                     <input type="text" id="name" placeholder="Name" required><br>
                     <label for="date" class="date"> Date : </label>
@@ -81,14 +81,12 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer">
-            <p>Connect with us</p>            
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-facebook-square"></a>
-            <a href="#" class="fa fa-twitter-square"></a>
-            <a href="#" class="fa fa-whatsapp"></a>           
-        </div>
+    <footer class="footer">
+        <p>Connect with us</p>            
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook-square"></a>
+        <a href="#" class="fa fa-twitter-square"></a>
+        <a href="#" class="fa fa-whatsapp"></a>           
     </footer>
 </body>
 </html>
