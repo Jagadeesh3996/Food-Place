@@ -37,19 +37,26 @@ a{
 }
 .logo{
     float: left;
-    font-weight: bold;
     line-height: 60px;
-    font-size: 35px;
-    color: rgb(143, 141, 141);
-    animation: logo 1.5s;
+    font-weight: bold;
+    margin-left: 25px;
+    color: rgb(71, 71, 71);
+    animation: logo 1.5s infinite;
 }
 @keyframes logo{
-    0%{
-        transform: translateX(-100%);
+    50%{
+        color: rgb(255, 255, 255);
+        text-decoration-line: overline;
+        font-size: 35px;
+        margin-left: -10px;
+        font-weight: bold;
+        text-shadow: 1px 1px 5px rgb(255, 255, 255),
+                    -1px -1px 5px rgb(255, 255, 255); 
     }
 }
 .header label:hover, #logo:checked ~ label{
     color: rgb(255, 255, 255);
+    text-decoration-line: overline;
     text-shadow: 1px 1px 5px rgb(255, 255, 255),
                 -1px -1px 5px rgb(255, 255, 255);
 }
@@ -119,6 +126,13 @@ a{
     z-index: -1;
     width: 100%;
     height: auto;
+}
+.bg{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    z-index: -2;
 }
 
 /* body part css -> about */
@@ -336,7 +350,7 @@ a{
         height: 100vh;
     }
     .about{
-        height: 135vh;
+        height: 140vh;
     }
     .about h1{
         font-size: 30px;
@@ -351,9 +365,6 @@ a{
 }
 
 @media screen and (max-width: 650px) {
-    .logo{
-        font-size: 30px;
-    }
     .header{
         padding: 0px 25px;
     }
@@ -383,13 +394,19 @@ a{
 
 /* For Mobile view */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .about{
         height: 150vh;
     }
     .pro{
         font-size: 15px;
     }
+    .reserve h1{
+        font-size: 25px;
+    }
+    .resForm{
+        margin: 2% 10%;
+    }    
     .tc, #tc{
         font-size: 15px;
         margin-left: -40%;
