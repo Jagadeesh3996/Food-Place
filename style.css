@@ -329,8 +329,8 @@ a{
     }
     .nav{
         width: 100%;
-        height: 55vh;
-        background-color: rgba(83, 102, 77, 0.8);
+        height: 60vh;
+        background-color: rgba(83, 102, 77, 0.9);
         top: 65px;
         position: absolute;
         right: -100%;
