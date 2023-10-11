@@ -101,9 +101,11 @@ a{
 .hcontent{
     z-index: 1;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 35px;
     font-weight: 600;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255),
+                -1px -1px 5px rgb(255, 255, 255);
 }
 .hcontent a{
     font-size: 20px;
@@ -115,6 +117,7 @@ a{
     background-color: rgba(3, 72, 18,0.7);
     border: 2px solid rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    text-shadow: none;
 }
 .hcontent a:hover{
     background-color: rgba(38, 38, 231, 0.7);
@@ -250,6 +253,9 @@ a{
     line-height: 50px;
     font-size: 40px;
     text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255),
+                -1px -1px 5px rgb(255, 255, 255); 
+
 }
 .resForm{
     padding: 10px;
@@ -304,12 +310,14 @@ a{
     width: 100%;
     font-size: 25px;
     font-weight: bold;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0,0.5);
     box-shadow: -2px 0px 5px rgb(255, 255, 255);
-    z-index: 1111;
+    z-index: 11111;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    bottom: 0px;
 }
 .footer a, .footer p{
     padding: 0px 5px;
@@ -385,7 +393,7 @@ a{
     }
     .resForm{
         font-size: 20px;
-        margin: 10% 10%;
+        margin: 10%;
     }
     .tc{
         margin-left: -20%;
