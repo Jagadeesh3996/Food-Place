@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="vendor/font-awesome/font-awesome.min.js"></script>
+    <script src="vendor/jQuery/jquery.min.js"></script>
+    <script src="script.js" defer></script>
     <title>Restaurant</title>
 </head>
 
@@ -23,19 +25,19 @@
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="#home" class="fa fa-house"> Home</a></li>
-                <li><a href="#about" class="fa fa-info-circle"> About</a></li>
-                <li><a href="#menu" class="fa fa-spoon"> Menu</a></li>
+                <li><a href="./index.html#home" class="fa fa-house"> Home</a></li>
+                <li><a href="./index.html#about" class="fa fa-info-circle"> About</a></li>
+                <li><a href="./index.html#menu" class="fa fa-spoon"> Menu</a></li>
                 <li><a href="#" class="fa fa-image"> Gallery</a></li>
-                <li><a href="#reserve" class="fa fa-users"> Reservation</a></li>
-                <li><a href="#" class="fa fa-address-card"> Contact</a></li>
+                <li><a href="./index.html#reserve" class="fa fa-users"> Reservation</a></li>
+                <li><a href="./contact.html#contact" class="fa fa-address-card" target="_blank"> Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- body part -->
 
-    <main>
+    <main class="main">
         <div id="home" class="home">
             <div class="hcontent">
                 <p>HI, Welcome to</p>
@@ -63,7 +65,7 @@
         <div id="reserve" class="reserve">
             <h1>Reservation</h1>
             <div class="resForm">
-                <form method="post">                    
+                <form action="reservation.html" target="_blank" method="post">                    
                     <label for="name" class="name"> Name : </label>
                     <input type="text" id="name" placeholder="Name" required><br>
                     <label for="date" class="date"> Date : </label>
@@ -74,14 +76,18 @@
                     <input type="number" id="guest" min="1" max="50" placeholder="1" required><br>
                     <input type="checkbox" id="tc" required>
                     <label for="tc" class="tc"><a href="#"> Terms & Condition </a></label><br>
-                    <button type="submit" class="button">Reserve Now</button>                       
+                    <button type="submit" class="button" id="btn">Reserve Now</button>                       
                 </form>
             </div>
             <div class="canply">
                 <p><span> Cancellation policy </span> - While you won't be charged if you need to cancel, we ask that you do so at least 24 hours in advance.</p>
+                <!-- <p id="output">a</p> -->
             </div>
         </div>
     </main>
+
+    <!-- footer part -->
+
     <footer class="footer">
         <p>Connect with us</p>            
         <a href="#" class="fa fa-instagram"></a>
