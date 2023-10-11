@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="vendor/font-awesome/font-awesome.min.js"></script>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contact{
+            width: 100%;
+            height: 100vh;
+            padding-top: 60px;
+            background-image: url(Images/cbg.jpg);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+        }
+        .contact h1{
+            line-height: 50px;
+            font-size: 40px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 5px rgb(255, 255, 255),
+                        -1px -1px 5px rgb(255, 255, 255); 
+
+        }
+        .contact form{
+            padding: 20px;
+            margin: 5% 30%;
+            font-size: 30px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+        }
+        .contact input, .msg{
+            margin: 10px;
+            padding: 5px;
+            font-size: 20px;
+            width: 300px;
+        }
+        .msg{
+            margin-bottom: -5px;
+        }
+        .button{
+            font-size: 20px;
+            width: 150px;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: rgba(4, 250, 78, 0.5);
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .button:hover{
+            background-color: rgba(224, 75, 75, 0.5);
+            color: rgb(255, 255, 255);
+        }
+        @media screen and (max-width: 1120px){
+            .contact Form{
+                font-size: 25px;
+                margin: 5% 20%;
+            }
+        }
+        @media screen and (max-width: 650px) {
+            .contact h1{
+                font-size: 35px;
+            }
+            .contact form{
+                margin: 10%;
+            }
+        }
+        @media screen and (max-width: 420px) {
+            .contact h1{
+                font-size: 20px;
+            }
+            .contact Form{
+                margin: 2% 10%;
+            }
+            .contact input, .msg{
+                width: 200px;
+                font-size: 15px;
+                margin: 5px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="contact" class="contact">
+        <h1>Connect with us</h1>
+        <form method="post">                    
+            <label for="name"> Name : </label>
+            <input type="text" id="name" placeholder="Enter your Name here" required><br>
+            <label for="email"> E-Mail : </label>
+            <input type="email" id="email" placeholder="Enter your E-mail here" required><br>
+            <label for="msg">Message : </label>
+            <textarea id="msg" class="msg" rows="5" placeholder="Enter your message here" required></textarea><br>
+            <button type="submit" class="button">Connect</button>                       
+        </form>
+    </div>
+</body>
+</html>
