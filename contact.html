@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <script src="vendor/font-awesome/font-awesome.min.js"></script>
+    <!-- <script src="vendor/font-awesome/font-awesome.min.js"></script> -->
 
 
     <style>
@@ -46,7 +46,7 @@
         .msg{
             margin-bottom: -5px;
         }
-        .button{
+        .btn{
             font-size: 20px;
             width: 150px;
             padding: 5px;
@@ -56,7 +56,7 @@
             cursor: pointer;
             margin-top: 30px;
         }
-        .button:hover{
+        .btn:hover{
             background-color: rgba(224, 75, 75, 0.5);
             color: rgb(255, 255, 255);
         }
@@ -91,7 +91,7 @@
 
 </head>
 <body>
-    <div id="contact" class="contact">
+    <div class="contact">
         <h1>Connect with us</h1>
         <form method="post">                    
             <label for="name"> Name : </label>
@@ -100,7 +100,7 @@
             <input type="email" id="email" placeholder="Enter your E-mail here" required><br>
             <label for="msg">Message : </label>
             <textarea id="msg" class="msg" rows="5" placeholder="Enter your message here" required></textarea><br>
-            <button type="submit" class="button">Connect</button>                       
+            <button type="submit" class="btn">Connect</button>                       
         </form>
     </div>
 </body>

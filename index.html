@@ -65,9 +65,9 @@
         <div id="reserve" class="reserve">
             <h1>Reservation</h1>
             <div class="resForm">
-                <form action="reservation.html" target="_blank" method="post">                    
+                <form method="post">                    
                     <label for="name" class="name"> Name : </label>
-                    <input type="text" id="name" placeholder="Name" required><br>
+                    <input type="text" id="name" placeholder="Name" autocapitalize="true" required><br>
                     <label for="date" class="date"> Date : </label>
                     <input type="date" id="date" required><br>
                     <label for="time"> Timing : </label>
@@ -76,12 +76,12 @@
                     <input type="number" id="guest" min="1" max="50" placeholder="1" required><br>
                     <input type="checkbox" id="tc" required>
                     <label for="tc" class="tc"><a href="#"> Terms & Condition </a></label><br>
-                    <button type="submit" class="button" id="btn">Reserve Now</button>                       
+                    <button type="button" class="button" id="btn">Reserve Now</button>                       
                 </form>
             </div>
             <div class="canply">
                 <p><span> Cancellation policy </span> - While you won't be charged if you need to cancel, we ask that you do so at least 24 hours in advance.</p>
-                <!-- <p id="output">a</p> -->
+                <p id="output">a</p>
             </div>
         </div>
     </main>
